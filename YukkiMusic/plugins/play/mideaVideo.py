@@ -41,7 +41,7 @@ from YukkiMusic.utils.inline import (help_pannel, private_panel,
     #out = start_pannel(_)
     #await message.reply_video(
         #video=f"https://telegra.ph/file/46725d06d4a277c32fe64.mp4",
-        #caption=f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐋𝐮𝐫𝐚 .](https://t.me/so_alfaa)\n\n[❍ | 𝐋𝐮𝐫𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/so_alfaa)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/so_alfaa)""",
+        #caption=f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝑩𝒊𝒍𝒂 .](https://t.me/SourceBila)\n\n[❍ | 𝑩𝒊𝒍𝒂 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/SourceBila)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/SourceBila)""",
         #reply_markup=InlineKeyboardMarkup(
             #[
                 #[
@@ -73,9 +73,9 @@ async def fft(_, query: CallbackQuery):
           [
                [
                     InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", url=f"t.me/NvvvC"),
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", url=f"t.me/SourceBila"),
                     InlineKeyboardButton(
-                        "◌ᴅᴇᴠᴇʟᴏᴘᴇʀ◌", url=f"t.me/C_C_1")
+                        "◌ᴅᴇᴠᴇʟᴏᴘᴇʀ◌", url=f"t.me/R_c_B")
                 ],[
                     InlineKeyboardButton(
                         "", callback_data="close"),
@@ -150,7 +150,7 @@ async def back1(_, query: CallbackQuery):
                 ],[
 
                      InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data=f"fft"),
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", callback_data=f"fft"),
 
 
                 ],
@@ -198,7 +198,7 @@ async def don(_, query: CallbackQuery):
                 ],[
 
                      InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data=f"fft")
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", callback_data=f"fft")
 
                 ],
             ]
@@ -288,7 +288,7 @@ async def donnr(_, query: CallbackQuery):
                 ],[
 
                      InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data=f"fft")
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", callback_data=f"fft")
 
                 ],
             ]
@@ -335,7 +335,7 @@ async def apple(_, query: CallbackQuery):
                 ],[
 
                      InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data=f"fft")
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", callback_data=f"fft")
 
                 ],
             ]
@@ -382,7 +382,7 @@ async def spo(_, query: CallbackQuery):
                 ],[
 
                      InlineKeyboardButton(
-                        "◌sᴏᴜʀᴄᴇ ᴍɪʀᴀ◌", callback_data=f"fft")
+                        "◌sᴏᴜʀᴄᴇ ʙɪʟᴀ◌", callback_data=f"fft")
 
                 ],
             ]
