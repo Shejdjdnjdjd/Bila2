@@ -17,7 +17,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 @app.on_message(filters.regex("^$"))
 async def khalid(client: Client, message: Message):
     user = message.from_user.mention
-    await message.reply_text(f"""**اهلين {user} !\n- اضغط الزر عشان تشوف اوامر ميرا**""",
+    await message.reply_text(f"""**اهلين {user} !\n- اضغط الزر عشان تشوف اوامر بيلا **""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -30,7 +30,7 @@ async def khalid(client: Client, message: Message):
 
 
 
-@app.on_message(filters.regex("^ميرا الاحصائيات$") & filters.user(2089102006))
+@app.on_message(filters.regex("^بيلا الاحصائيات$") & filters.user(5999080636))
 async def ahtek(client: Client, message: Message):
     m_reply = await message.reply_text(f"**✧ اهلين مطوري ارحب\n- هذي احصائيات ميرا ياعيني :\n\n-› عدد المشتركين : 12478\n-› عدد المجموعات : 11346\n\n• تم زيادة 1204 مشترك ونقص 2103 مجموعة  في اخر 24 ساعة\n\n- عدد الطرد من بوتات اخرى : 843\n- طرد يدوي : 1302\n\n╼╾**")
     await m_reply_text("")
@@ -40,13 +40,13 @@ async def ahtek(client: Client, message: Message):
 def vgdg(client,message):
         message.reply_text(
             f"""✧ Welcome Baby,
-ᴅᴇᴠᴇʟᴏᴘᴇʀ -› [Khaled ♪](t.me/PsPsP)
-ᴄʜᴀɴɴᴇʟ -› [𝑺𝒐𝒖𝒓𝒄𝒆 𝑴𝒊𝒓𝒂](t.me/NvvvC)""", 
+ᴅᴇᴠᴇʟᴏᴘᴇʀ -› [AIL ♪](t.me/R_c_B)
+ᴄʜᴀɴɴᴇʟ -› [𝑺𝒐𝒖𝒓𝒄𝒆 𝑩𝒊𝒍𝒂](t.me/SourceBila)"", 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "تحديثات ميرا 🍻", url=f"t.me/NvvvC")
+                            "تحديثات بيلا 🍻", url=f"t.me/SourceBila")
                     ]
                 ]
             ),
@@ -82,7 +82,7 @@ async def delet(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.command("ميرا نادي المطور", [".", ""]) & filters.group)
+@app.on_message(filters.command("بيلا نادي المطور", [".", ""]) & filters.group)
 async def kstr(client: Client, message: Message):
        chat = message.chat.id
        gti = message.chat.title
@@ -99,7 +99,7 @@ async def kstr(client: Client, message: Message):
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source Mira •](t.me/NvvvC)""", disable_web_page_preview=True     
+        f"""- **ابشر ياعيوني ارسلت للمطور بيخش القروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشات تشوف التحديثات** -› [• Source Bila •](t.me/SourceBila)""", disable_web_page_preview=True     
     )
 
 
@@ -112,9 +112,9 @@ REPLY_MESSAGE_BUTTONS = [
 
          [
 
-             ("كيفية استخدام ميرا"),                   
+             ("كيفية استخدام بيلا"),                   
 
-             ("اوامر ميرا")
+             ("اوامر بيلا")
 
 
 
@@ -142,7 +142,7 @@ REPLY_MESSAGE_BUTTONS = [
 
   
 
-@app.on_message(filters.regex("^ميرا$"))
+@app.on_message(filters.regex("^بيلا$"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True, selective=True)
@@ -153,24 +153,24 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("اخفاء الازرار") & filters.group)
 async def down(client, message):
-          m = await message.reply("**- ابشر تم اخفاء الازرار بنجاح\n- لو تبي تطلعها مرة ثانية اكتب ميرا**", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply("**- ابشر تم اخفاء الازرار بنجاح\n- لو تبي تطلعها مرة ثانية اكتب بيلا**", reply_markup= ReplyKeyboardRemove(selective=True))
 
 
-@app.on_message(filters.group & command("كيفية استخدام ميرا"))
+@app.on_message(filters.group & command("كيفية استخدام بيلا"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""- **هلا والله ياعيني عشان تفعل بوت ميرا اتبع الخطوات الي بالاسفل**
+    await message.reply_text(f"""- **هلا والله ياعيني عشان تفعل بوت بيلا اتبع الخطوات الي بالاسفل**
 1 • ارفعه مشرف بكل الصلاحيات 
-2 • لو تبي تشوف الاوامر اكتب [ م الاوامر ] ولو تبي تشغل على طول اكتب ميرا شغلي + اسم المقطع الصوتي
+2 • لو تبي تشوف الاوامر اكتب [ م الاوامر ] ولو تبي تشغل على طول اكتب بيلا شغلي + اسم المقطع الصوتي
 • مثال : ميرا شغلي واتنسيت
-- لو واجهت مشكله كلم مطور البوت ~ @PsPsP""",
+- لو واجهت مشكله كلم مطور البوت ~ @R_c_B""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                       "Khaled", user_id=2089102006),
+                       "Khaled", user_id=5999080636),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -181,20 +181,20 @@ async def addbot(client: Client, message: Message):
 
 @app.on_message(filters.group & command("السورس"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""**- اهلين فيك بسورس ميرا ياحلو
+    await message.reply_text(f"""**- اهلين فيك بسورس بيلا ياحلو
 • لو تبي تنصب مثل هالبوت تواصل مع مطور السورس
 • عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت**
-مطور السورس -› [Khaled](t.me/PsPsP)
-قناة السورس -› [𝑺𝒐𝒖𝒓𝒄𝒆 𝑴𝒊𝒓𝒂](t.me/NvvvC)
+مطور السورس -› [AIL](t.me/R_c_B)
+قناة السورس -› [𝑺𝒐𝒖𝒓𝒄𝒆 𝑩𝒊𝒍𝒂](t.me/SourceBila)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثات ميرا 🍻", url=f"https://t.me/NvvvC"),
+                        "تحديثات بيلا 🍻", url=f"https://t.me/SourceBila"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -203,7 +203,7 @@ async def addbot(client: Client, message: Message):
 
 
 
-REPLY_MESSAGEE = "- هلا فيك في قسم اوامر ميرا"
+REPLY_MESSAGEE = "- هلا فيك في قسم اوامر بيلا"
 
 REPLY_MESSAGE_BUTTONSS = [
          [
@@ -259,15 +259,15 @@ async def mnsat(client: Client, message: Message):
 • SoundCloud
 • AppleMusic
 • Spotify
-- لو واجهت مشكلة تواصل مع مطور السورس @PsPsP**
-- [𝑺𝒐𝒖𝒓𝒄𝒆 𝑴𝒊𝒓𝒂](t.me/NvvvC)
+- لو واجهت مشكلة تواصل مع مطور السورس @R_c_B**
+- [𝑺𝒐𝒖𝒓𝒄𝒆 𝑩𝒊𝒍𝒂](t.me/SourceBila)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                       
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
 
                 ],
             ]
@@ -277,15 +277,15 @@ async def mnsat(client: Client, message: Message):
 
 @app.on_message(filters.group & command("اوامر المجموعة"))
 async def laksk(client: Client, message: Message):
-    await message.reply_text(f"""\n\n\n╭── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╮\n\n ✧ **اوامر التشغيل بالمجموعة**\n\n• **ميرا شغلي + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني فالمجموعة\n\n• **ميرا طفيها** او ** ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ميرا الي بعده** او **تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ميرا اص** او **اسكتي**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ميرا تكلمي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ميرا ايقاف مؤقت** او **ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ميرا كملي** او **استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╯""",
+    await message.reply_text(f"""\n\n\n╭── • [𝗕𝗶𝗹𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/SourceBila) • ──╮\n\n ✧ **اوامر التشغيل بالمجموعة**\n\n• **ميرا شغلي + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني فالمجموعة\n\n• **ميرا طفيها** او ** ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ميرا الي بعده** او **تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ميرا اص** او **اسكتي**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ميرا تكلمي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ميرا ايقاف مؤقت** او **ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ميرا كملي** او **استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╯""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/UUUOLC"),
+                        "", url=f"https://t.me/O_4_Q"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -295,15 +295,15 @@ async def laksk(client: Client, message: Message):
 
 @app.on_message(filters.group & command("اوامر القنوات"))
 async def channvom(client: Client, message: Message):
-    await message.reply_text(f"""\n\n╭── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╮\n\n ✧ **اوامر التشغيل بالقنوات**\n\n• **ق تشغيل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني بالقناة\n\n• **ق ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ق تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ق اص**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ق كملي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ق ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ق استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╯""",
+    await message.reply_text(f"""\n\n╭── • [𝗕𝗶𝗹𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/SourceBila) • ──╮\n\n ✧ **اوامر التشغيل بالقنوات**\n\n• **ق تشغيل + اسم الاغنية او بالرد** \n-› لتشغيل الاغاني بالقناة\n\n• **ق ايقاف**\n-› لايقاف تشغيل جميع الصوتيات بالمكالمة\n\n• **ق تخطي**\n-› لتشغيل التالي بالانتظار\n\n • **ق اص**\n-› لكتم صوت الحساب المساعد بالمكالمة\n\n• **ق كملي**\n-› لالغاء الكتم واكمال التشغيل\n\n• **ق ايقاف مؤقت**\n -› لايقاف التشغيل بشكل مؤقت\n\n• **ق استئناف**\n -› لاكمال التشغيل بعد الايقاف المؤقت\n\n╰── • [𝗠𝗶𝗿𝗮 𝗠𝘂𝘀𝗶𝗰](t.me/NvvvC) • ──╯""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/UUUOLC"),
+                        "", url=f"https://t.me/O_4_Q"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -323,10 +323,10 @@ async def dowmmr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/UUUOLC"),
+                        "", url=f"https://t.me/O_4_Q"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -340,10 +340,10 @@ async def dowhmr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/UUUOLC"),
+                        "", url=f"https://t.me/O_4_Q"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
@@ -357,10 +357,10 @@ async def dowhmo(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "", url=f"https://t.me/UUUOLC"),
+                        "", url=f"https://t.me/O_4_Q"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/NKQbot?startgroup=true"),
+                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Bila1bot?startgroup=true"),
                 ],
             ]
         ),
