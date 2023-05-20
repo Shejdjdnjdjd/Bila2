@@ -118,7 +118,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"""• In the end, you are the bad, and they are the innocent\n\n• 𝑵𝒂𝒎𝒆 -› {message.from_user.mention}\n• 𝑼𝒔𝒆𝒓 -› @{message.from_user.username}\n• 𝑺𝒕𝒂𝒕𝒔 -› Developer Mira\n• 𝑩𝒊𝒐 -› {bio}""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""• In the end, you are the bad, and they are the innocent\n\n• 𝑵𝒂𝒎𝒆 -› {message.from_user.mention}\n• 𝑼𝒔𝒆𝒓 -› @{message.from_user.username}\n• 𝑺𝒕𝒂𝒕𝒔 -› Developer Bila\n• 𝑩𝒊𝒐 -› {bio}""", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -128,7 +128,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, user_id=2089102006)
+                        name, user_id=5999080636)
 
                 ],
 
@@ -154,7 +154,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        name, user_id=2089102006)
+                        name, user_id=5999080636)
 
                 ],
 
@@ -177,15 +177,15 @@ async def mira(client: Client, message: Message):
 async def sourc(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/588d70e34b51710ae8dce.jpg",
-        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝑴𝒊𝒓𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ -› @PsPsP\n• ᴄʜᴀɴɴᴇʟ ᴍɪʀᴀ -› @NvvvC\n\n**- للتنصيب او للاستفسار تواصل مع مطور السورس**""",
+        caption=f"""✧ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑺𝒐𝒖𝒓𝒄𝒆 𝑩𝒊𝒍𝒂 ♪\n\n• ᴅᴇᴠᴇʟᴏᴘᴇʀ -› @R_c_B\n• ᴄʜᴀɴɴᴇʟ ᴍɪʀᴀ -› @SourceBila\n\n**- للتنصيب او للاستفسار تواصل مع مطور السورس**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                       "مطور السورس", user_id=2089102006)
+                       "مطور السورس", user_id=5999080636)
                 ],[
                     InlineKeyboardButton(
-                       "تحديثات ميرا", url=f"https://t.me/NvvvC")
+                       "تحديثات بيلا", url=f"https://t.me/SourceBila")
                 
                  ],
 
@@ -198,16 +198,16 @@ async def sourc(client: Client, message: Message):
 
 @app.on_message(filters.regex("^المطور$") & filters.group & ~filters.edited)
 async def aboutd5ev(client: Client, message: Message):
-    usr = await client.get_chat(2089102006)
+    usr = await client.get_chat(5999080636)
     name = usr.first_name
-    bio = (await client.get_chat(2089102006)).bio
-    async for photo in client.iter_profile_photos(2089102006, limit=1):
-                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑻𝒐 𝑩𝒐𝒕 𝑴𝒊𝒓𝒂 ♪ -› @PsPsP\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 -› {bio}""", 
+    bio = (await client.get_chat(5999080636)).bio
+    async for photo in client.iter_profile_photos(5999080636, limit=1):
+                    await message.reply_photo(photo.file_id, caption=f"""- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑻𝒐 𝑩𝒐𝒕 𝑩𝒊𝒍𝒂 ♪ -› @R_c_B\n\n- 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓'𝒔 𝑩𝒊𝒐 -› {bio}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, user_id=2089102006)
+                        name, user_id=5999080636)
                 ],
             ]
         ),
