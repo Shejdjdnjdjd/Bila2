@@ -64,7 +64,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("خطأ ، تواصل مع مطور البوت - @PsPsP")
+        m.edit("خطأ ، تواصل مع مطور البوت - @R_c_B")
         print(e)
 
     try:
@@ -103,7 +103,7 @@ def song232(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**- Ch** [تحديثات ميرا ♪](t.me/NvvvC)"
+        rep = f"**- Ch** [تحديثات بيلا ♪](t.me/SourceBila)"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
