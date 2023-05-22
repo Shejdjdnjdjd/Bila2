@@ -17,8 +17,8 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", "19701360"))
-API_HASH = getenv("API_HASH", "17e5d9068dd7a5d8ff7b6f3e6944bcdf")
+API_ID = int(getenv("API_ID", "8934899"))
+API_HASH = getenv("API_HASH", "bf3e98d2c351e4ad06946b4897374a1e")
 
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN", "6021073185:AAHMZ_U6EFkkmgJY-s7xn9Z-rE74y55o60c")
@@ -61,7 +61,7 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
@@ -124,11 +124,11 @@ CLEANMODE_DELETE_MINS = int(
 # Telegram audio  and video file size limit
 
 TG_AUDIO_FILESIZE_LIMIT = int(
-    getenv("TG_AUDIO_FILESIZE_LIMIT", "5999080636")
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600")
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
-    getenv("TG_VIDEO_FILESIZE_LIMIT", "5999080636")
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "104857600")
 )  # Remember to give value in bytes
 
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
@@ -136,7 +136,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", "BACy4NinQPg3IkQxbe-Mh7IRJOsRl8HkLvB3KDTu7WTw9ZhraSy0zrsSBqYRMhHFpUs7NqX1ta6BuAs2_hCpBJVXfndRa_ykjaskHZVxVs6NbQMZLFm83JKZE7dgFP_dMWXeNPIjlC6ZnUxMzE1R8qxGyflaA30h9NkDe4k2o5EzdPQWB868S4ax6xbmVEH9AAXvl1kqOMkIAj9dgwVcW4NB53euFn4O7vVBdD3qJzSChX_OqlL-THmT6Cg-G5lVjc8p7nowXb3D0rY90rtPf-1aVWHctWw1MqFV97JsvJqFBMJYbN9antCIVYJXy-d0d_3cyNUWTsAp9w2eJWxmWfGkAAAAAW6_7MAA")
-STRING2 = getenv("STRING_SESSION2", None)
+STRING2 = getenv("STRING_SESSION2", "BAB9uy9eZsugDQZGYoEKtgz95fgmwcBug5aB03MCX3kG9qChdm6R6YB7UEHfVRphl_XkHBxkBUtoXiCDKDaXfcmTaZao5h-rlhn_t_lMmf8lYY2j6zqBi1XaErGV5H46ny0dIoevtSfR3QxeNx1Mx9gBAXqx1G8BQnYh6IpM1I-IpSKOdyT71UI901iU4wJ-DyJhQvbGwC3Asi_GyIntTWtC8X_V3q8CvvCDuB-1B4K0pqLBfS89BVWxabonruIjaLVdHdlx-Sb3I8etFXD4KXJ7f5XD8DkMagKcmCdw4T6ILnjLgTu7yTWmZReJSRlyprXPbP00Egn7ILvBKC6rQwjqAAAAAW9fpy4A")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
